@@ -36,15 +36,16 @@
 
 ```cpp
 #include <iostream>
+
 using namespace std;
-int main(){
-    int time,H,M,S;
+
+int main() {
+    int time, H, M, S;
     cin >> time;
     H = time / 3600;
-    M = (time - H*3600) / 60;
-    S = time - H*3600 - M*60;
+    M = (time - H * 3600) / 60;
+    S = time - H * 3600 - M * 60;
     cout << H << ":" << M << ":" << S;
     return 0;
 }
 ```
-
